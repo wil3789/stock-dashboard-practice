@@ -1,0 +1,29 @@
+{% extends "bootstrap_5_layout.html" %}
+{% set active_page = "instructions" %}
+
+{% block content %}
+
+<form class="mx-auto" style="max-width: 1000px; margin-top:2em;">
+    <h2>Welcome to the Stocks Dashbaord</h2> <hr>
+
+    <p style="font-size: 24px;">
+      Get historical performance for any stock of your choice, if it is on a major American exchange.
+      Here are the instructions:
+      </p>
+
+      <ul class="instructions-list" style="font-size: 20px;">
+        <li class="step">1. Click on 'Input Form' in the navigation bar
+        <li class="step">2. Input your AlphaVantage API key
+        <li class="step">3. Input the ticker of the stock you want to display
+        <li class="step">4. Select a benchmark from the drop-down menu
+        <li class="step">5. Input the desired start date. This will show performance from the selected date to the present
+        <li class="step">6. (Optional) Select whether you want to display the benchmark performance
+        <li class="step">7. Click the 'Submit' button
+      </ul>
+
+      <hr>
+      <h4>Note: This page is in development. More functionality will be added soon.</h4>
+
+  </form>
+
+{% endblock %}
